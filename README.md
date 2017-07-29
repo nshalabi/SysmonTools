@@ -12,4 +12,4 @@ Once exported, run Sysmon View and import the generated file “eventlog.xml” 
 
 All data will be exported to a database file _(SQLite)_ named **SysmonViewDB** that resides in the same location as Sysmon View. This file can be shared with others, just place the file in the same location as  Sysmon View and use the command `File -> Load existing data`
 
-You can read more about Sysmon View and it's use cases on my website https://nosecurecode.blog/
+You can read more about Sysmon View and it's use cases on my website https://nosecurecode.com/
