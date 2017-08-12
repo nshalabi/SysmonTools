@@ -20,7 +20,10 @@ Sysmon Shell can aid in writing and applying Sysmon XML configuration through a 
 * It can export/save the final XML to a file.
 * It can apply the generated XML file by calling Sysmon.exe -c directly (creating a temp XML file in the same folder where Sysmon is installed), for this reason, it will need elevated privileges (the need for this is inherited from Sysmon), the output of applying the configuration will be displayed in the preview pan (Sysmon output)
 * XML Configuration can be previewed before saving in the preview pan
-* If you are using Sysmon for malware analysis, you might find the last tap marked "Logs Export" useful, as it allows exporting Sysmon logs to XML file for use later in Sysmon View (don't worry, there is an option to backup the evtx log)
+* If you are using Sysmon for malware analysis, you might find the last tap marked "Logs Export" useful, as it allows exporting Sysmon logs to XML file for use later, for example, I use it in Sysmon View for later analysis, the export has 3 options:
+** Export only
+** Export and clear Sysmon event log
+** Export, backup evtx file and clear the event log
 * The utility contains descriptions for all events types taken from Sysmon Sysinternals home page (https://technet.microsoft.com/en-us/sysinternals/sysmon)
 
 **What it won’t do**: warn you about Include/Exclude conflicts or attempt to validate the rules itself, however, once configuration is applied, the preview pan will display the output from Sysmon to show the results (this is the output of Sysmon -c command), from which errors can be identified
