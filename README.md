@@ -29,5 +29,7 @@ Sysmon Shell can aid in writing and applying Sysmon XML configuration through a 
 **What it won’t do**: warn you about Include/Exclude conflicts or attempt to validate the rules itself, however, once configuration is applied, the preview pan will display the output from Sysmon to show the results (this is the output of Sysmon -c command), from which errors can be identified
 
 Password of archives is **password**
+All executables has been **digitally signed**
+All executables are **packed to reduce their size** (all dependencies has been statically linked)
 
 You can read more about Sysmon View & Sysmon Shell on my website https://nosecurecode.com/
