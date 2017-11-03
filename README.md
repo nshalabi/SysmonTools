@@ -33,4 +33,10 @@ Sysmon Shell can aid in writing and applying Sysmon XML configuration through a 
 * All executables has been **digitally signed**
 * All executables are **packed to reduce their size** (all dependencies has been statically linked)
 
-You can read more about Sysmon View & Sysmon Shell on my website https://nosecurecode.com/
+# Additional Resources
+* You can read more about Sysmon View & Sysmon Shell on my website https://nosecurecode.com/
+* For an overview on Sysmon and Sysmon View in action, check out https://www.fwhibbit.es/sysmon-the-big-brother-of-windows-and-the-super-sysmonview
+
+# Support the author
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/1GoX3JXWjxP8F8KwnjaZkgrk8gq7NAG7Uo)](https://en.cryptobadges.io/donate/1GoX3JXWjxP8F8KwnjaZkgrk8gq7NAG7Uo)
+
