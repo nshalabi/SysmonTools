@@ -1,6 +1,8 @@
 # Sysmon View
 
-Sysmon View helps in tracking and visualizing Sysmon logs
+Sysmon View helps in tracking and visualizing Sysmon logs by logically grouping and linking the various events generated using executable names, session GUIDs or the time of event, it also has easy to use search feature to look through all the events data, a GEO mapping of IP addresses and VirusTotal lookup for IP, domain and hashes.
+
+![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2017/11/HeadImage.png "Sysmon View")
 
 **Getting Started**
 
@@ -12,9 +14,15 @@ Once exported, run Sysmon View and import the generated file “eventlog.xml” 
 
 All data will be exported to a database file _(SQLite)_ named **SysmonViewDB** that resides in the same location as Sysmon View. This file can be shared with others, just place the file in the same location as  Sysmon View and use the command `File -> Load existing data`
 
+The database can be used directly in your own application too, the database contains summaries of hashes, executables, IP addresses, geo mappings and all are logically linked through a file name or a session (executable GUID)
+
 # Sysmon Shell
 
-Sysmon Shell can aid in writing and applying Sysmon XML configuration through a simple GUI interface, it can also be used to learn more about Sysmon configuration options available with each release, in a nutshell:
+Sysmon Shell can aid in writing and applying Sysmon XML configuration through a simple GUI interface.
+
+![Sysmon Shell](https://nosecurecode.blog/wp-content/uploads/2017/11/HeadImageSysmonShell.png "Sysmon Shell")
+
+Sysmon Shell can be used to learn about Sysmon configuration options available with each release, easily apply and update the configuration, and export Sysmon logs, in a nutshell:
 
 * Sysmon Shell can load Sysmon XML files configurations: with version 1.0, I am only supporting the latest schema v3.30 for Sysmon v6.01 and above, future updates to Sysmon will be supported. In addition, the tool won’t be loading any configuration of Sysmon from the registry, however, I might add support to this feature in the future.
 * It can export/save the final XML to a file.
