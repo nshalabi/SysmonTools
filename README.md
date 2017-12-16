@@ -49,7 +49,9 @@ Sysmon Shell can be used to learn about Sysmon configuration options available w
 * For an overview on Sysmon and Sysmon View in action, check out https://www.fwhibbit.es/sysmon-the-big-brother-of-windows-and-the-super-sysmonview
 
 # Support
-Developing free software takes time and effort, and we would value your contribution to this project
+Sysmon Tools are free, they meant to help security professional in tracking and understanding malware behavior, I try my best to maintain the code base, track changes in Sysmon, resolve bugs as soon as reported and reply to queries, With your kind support, you help me maintain an ongoing development of the tool set.
 
-* Bitcoin : `1GoX3JXWjxP8F8KwnjaZkgrk8gq7NAG7Uo `
+* Bitcoin : `1GoX3JXWjxP8F8KwnjaZkgrk8gq7NAG7Uo`
 * Ether : `0xdfd1bf0d73e38994B7F1bD665FBff707ACaFf988`
+
+Much appreciated.
