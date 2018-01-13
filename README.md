@@ -24,7 +24,7 @@ Sysmon Shell can aid in writing and applying Sysmon XML configuration through a 
 
 Sysmon Shell can be used to learn about Sysmon configuration options available with each release, easily apply and update the configuration, and export Sysmon logs, in a nutshell:
 
-* Sysmon Shell can load Sysmon XML files configurations: with current version, I am only supporting the latest schema v3.40 of Sysmon v6.20 and above, future updates to Sysmon will be supported. In addition, the tool won’t be loading any configuration of Sysmon from the registry, however, I might add support to this feature in the future.
+* Sysmon Shell can load Sysmon XML files configurations: current version supports all Sysmon schemas. In addition, the tool won’t be loading any configuration of Sysmon from the registry (might add support to this feature in the future).
 * It can export/save the final XML to a file.
 * It can apply the generated XML file by calling Sysmon.exe -c directly (creating a temp XML file in the same folder where Sysmon is installed), for this reason, it will need elevated privileges (the need for this is inherited from Sysmon), the output of applying the configuration will be displayed in the preview pan (Sysmon output)
 * XML Configuration can be previewed before saving in the preview pane
