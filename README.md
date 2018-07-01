@@ -28,7 +28,7 @@ The events can be even arranged (grouped) by machine, event type or GUID
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/4.png "Sysmon View")
 
-The tool can support multiple grouping levels
+Multiple grouping levels are also supported
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/5.png "Sysmon View")
 
