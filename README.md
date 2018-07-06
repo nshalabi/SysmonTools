@@ -31,6 +31,7 @@ This feature is currently in testing for several reasons:
 *  Connectivity to Elasticsearch needs to be "securely" improved (for example add support to SSL, X-Pack, etc...)
 
 **Sysmon Views**
+
 **Process View** this view simply helps focus on a summary of "run sessions", for example, the analyst can start with executable name (such as cmd.exe) or event type (such as Network event), from there, further filtering can be applied to find running sessions originating for the same binary, but from different locations. This view utilizes the process GUID to filter events per "run" session, selecting any running session (from the list of GUIDs) will display all other (correlated) related events in a simple data-flow view sorted using the time of the event.
 Note: in case data is being imported from an Elasticsearch instance instead of single machine, events can be arranged per executable per machine - check previous section **"Experimental - Sysmon View and Elasticsearch"**).
 
