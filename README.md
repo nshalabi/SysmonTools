@@ -1,6 +1,6 @@
 # Sysmon View
 
-Sysmon View helps in tracking and visualizing Sysmon logs by logically grouping and correlating the various Sysmon events together, using existing events data, such as executables names, session GUIDs, event creation time, etc., the tool then re-arranges this data for display into multiple visualizations (views)
+Sysmon View helps in tracking and visualizing Sysmon logs by logically grouping and correlating the various Sysmon events together, using existing events data, such as executables names, session GUIDs, event creation time, etc., the tool then re-arranges this data for display into multiple views
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/1.png "Sysmon View")
 
