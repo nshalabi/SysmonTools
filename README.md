@@ -39,7 +39,7 @@ _Note: in case data is being imported from an Elasticsearch instance instead of 
 
 Access to Sysmon event details is provided by simply double-clicking any event in the view, for example, the previous screen capture shows the details of the _Process Creation_ event (event ID 1), the tool also can integrate with VirusTotal upon demand for further hash and IP lookup (Needs an API key registration).
 
-**Map View** During the events import process, there is an option to geo-locate IP addresses, if set, Sysmon View will try to geo-map **Network Destinations** using https://freegeoip.net service.
+**Map View** : During the events import process, there is an option to geo-locate IP addresses, if set, Sysmon View will try to geo-map **Network Destinations** using https://freegeoip.net service.
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2.png "Sysmon View")
 
@@ -61,31 +61,31 @@ Multiple grouping levels are also possible
 
 # Sysmon Shell
 
-Sysmon Shell can aid in writing and applying Sysmon XML configuration through a simple GUI interface.
+Sysmon Shell can aid in writing and applying Sysmon XML configurations through a simple GUI interface.
 
 ![Sysmon Shell](https://nosecurecode.blog/wp-content/uploads/2017/11/HeadImageSysmonShell.png "Sysmon Shell")
 
-Sysmon Shell can also be used to explore more about Sysmon configuration options available with each release, easily apply and update the configuration, and export Sysmon logs, in a nutshell:
+Sysmon Shell can also be used to explore the various configuration options available to Sysmon, easily apply and update XML configuration, in addition to exporting Sysmon events logs, in a nutshell:
 
-* Sysmon Shell can load Sysmon XML files configurations: current version supports all Sysmon schemas. In addition (the tool won’t load any configuration directly from registry - might add support to this feature in the future).
+* Sysmon Shell can load Sysmon XML configuration files: current version supports all Sysmon schemas. (the tool doesn't load any configurations directly from registry, only from XML files).
 * It can export/save the final XML to a file.
-* It can apply the generated XML file by calling Sysmon.exe -c command directly (creating a temporary XML file in the same folder where Sysmon is installed), for this reason, it will need elevated privileges (the need for this is inherited from Sysmon process itself), the output of applying the configuration will be displayed in the preview pan (this is Sysmon output)
+* It can apply the generated XML configuration file by calling `Sysmon.exe -c command` directly (creating a temporary XML file in the same folder where Sysmon is installed), for this reason, if this feature is used, Sysmon Shell will require elevated privileges (the need for this is inherited from Sysmon process itself), the output of applying the configuration will be displayed in the preview pan (this is Sysmon generated output)
 * XML Configuration can be previewed before saving in the preview pane
-* In case Sysmon is being used to do malware analysis, the last tab (marked "Logs Export") might be found handy, as it allows exporting Sysmon event logs to XML, which can be later used with "Sysmon View" for events analysis, the export has three options:
+* The last tab (marked "Logs Export") might become handy to quickly export Sysmon event logs to XML, which can be later used with **"Sysmon View"** for events analysis, the export has three options:
     * Export only
     * Export and clear Sysmon event log
-    * Export, backup evtx file and clear the event log
+    * Export, backup _evtx_ file and clear the event log
 * The utility has descriptions for all events types taken from Sysmon Sysinternals home page (https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
-* Sysmon Shell comes bundled with many Sysmon configuration templates created by other security professionals
+* Sysmon Shell comes _bundled_ with many Sysmon configuration templates created by other security professionals
 
 ![Sysmon Shell Templates](https://nosecurecode.blog/wp-content/uploads/2017/12/SysmonShellTemplates.png "Sysmon Shell Templates")
 
-**What it won’t do**: warn you about Include/Exclude conflicts or attempt to validate the rules itself, however, once the configuration is applied, the preview pane will show the output captured from Sysmon command execution (this is the output of `Sysmon -c command`), from which errors can be identified
+**What it won’t do**: warn you about Include/Exclude conflicts or attempt to validate the rules itself, however, once the configuration is applied, the preview pane will display the output captured from Sysmon.exe when configuration is applied (the output of `Sysmon -c command`), from which errors can be identified
 
 # Notes
 * Password of archives is **password**
 * All executables are **digitally signed**
-* All executables are **packed to reduce their size** (all dependencies are statically linked for portability)
+* All executables are **packed to reduce their size** as all dependencies are statically linked for portability
 
 # Additional Resources
 * You can read more about Sysmon View & Sysmon Shell on my blog https://nosecurecode.com/
