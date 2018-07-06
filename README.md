@@ -32,26 +32,26 @@ This feature is currently in testing for several reasons:
 
 **Sysmon Views**
 
-**Process View** this view simply helps focus on a summary of "run sessions", for example, the analyst can start with executable name (such as cmd.exe) or event type (such as Network event), from there, further filtering can be applied to find running sessions originating for the same binary, but from different locations. This view utilizes the process GUID to filter events per "run" session, selecting any running session (from the list of GUIDs) will display all other (correlated) related events in a simple data-flow view sorted using the time of the event.
-Note: in case data is being imported from an Elasticsearch instance instead of single machine, events can be arranged per executable per machine - check previous section **"Experimental - Sysmon View and Elasticsearch"**).
+**Process View** this view simply helps focus on a summary of "run sessions", for example, the analyst can start with executable name (such as cmd.exe) or event type (such as Network event), from there, further filtering can be applied, for example, finding running sessions originating for the same binary, but from different locations. This view utilizes the process GUID to filter events per session "run", selecting any running session (from the list of GUIDs) will show all other related (correlated) events in a simple data-flow-like view, sorted using the time of the event.
+_Note: in case data is being imported from an Elasticsearch instance instead of single machine, events can be arranged per executable per machine - check previous section **"Experimental - Sysmon View and Elasticsearch"**)._
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/1_5.png "Sysmon View")
 
-Access to Sysmon event details is provided by simply double-clicking any event in the view, for example, the previous screen capture shows the details of the _Process Creation_ event (event ID 1), the tool also integrates with VirusTotal upon demand for further hash and IP lookup (Needs an API key registration).
+Access to Sysmon event details is provided by simply double-clicking any event in the view, for example, the previous screen capture shows the details of the _Process Creation_ event (event ID 1), the tool also can integrate with VirusTotal upon demand for further hash and IP lookup (Needs an API key registration).
 
 **Map View** During the events import process, there is an option to geo-locate IP addresses, if set, Sysmon View will try to geo-map **Network Destinations** using https://freegeoip.net service.
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2.png "Sysmon View")
 
-In **map view**, it is easy to navigate between correlated (related) events by using a _network event_ as a starting point, again, the tool is able to achive this using the running process session GUID. To explore related events, use the hyperlinks for the session GUID, a new view similar to **process view** will render the related session events:
+In **map view**, it is easy to navigate between correlated (related) events by using a _network event_ as a starting point, again, the tool is able to achive this using the running process session GUID. To explore related events, use the hyperlinks for the session GUID, a new view similar to **process view** will show up in a new window with all related session events:
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2_5.png "Sysmon View")
 
-**All Events View** can also be used to do a _full search_ through all events data, it also help view events that do not relate to other events, for example, the "Drive Loaded" event type. Navigation between related events is still provided using the process GUID.
+**All Events View** can also be used to do a _full search_ through all Sysmon collected events data, it also help in viewing events that do not relate to other events, such as the "Driver Loaded" event type. Navigation between related events is still provided using the process GUID in addition to event details by clicking on _FID link_
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/3.png "Sysmon View")
 
-The **All Events View** supports pivot-like (grouping) arrangement of events, for example, by machine name, event type or GUID, as shown below
+Additionally, The **All Events View** supports pivot-like (grouping) arrangement of events, by machine name, event type or GUID, as shown below
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/4.png "Sysmon View")
 
