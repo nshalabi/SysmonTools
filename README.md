@@ -1,37 +1,8 @@
 # Sysmon View
 
-Sysmon View helps in tracking and visualizing Sysmon logs by logically grouping and linking the various events generated using executable names, session GUIDs and sorted according the time of the event as shown in the following main view.
+Sysmon View helps in tracking and visualizing Sysmon logs by logically grouping and correlating the various Sysmon events together, using existing events data, such as executables names, session GUIDs, event creation time, etc., the tool then re-arranges this data for display into multiple visualizations (views)
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/1.png "Sysmon View")
-
-Previous view arranges Sysmon events per executable, it has many filtering options down to the executable path level and executable run sessions, and in case data is being imported from Elasticsearch instead of single machine, events can be grouped per executable per machine - check later the section **"Experimental - Sysmon View and Elasticsearch"**).
-
-Sysmon View makes it simple and easy to get to the details of each events too.
-
-![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/1_5.png "Sysmon View")
-
-The previous view shows the details of the _Process Creation_ events (event ID 1), the tool also integrates with VirusTotal for hash and IP lookup.
-
-Sysmon View has several other views to display data, for example, the following is a geo-map view of **Network Destinations**
-
-![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2.png "Sysmon View")
-
-In this view, it is easy to move and relate the network event for example with the rest of the executable running session events (GUID), to do that, use the hyperlinks for the session GUID, here is the result:
-
-![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2_5.png "Sysmon View")
-
-Sysmon View can also be used to do a full search through all events data using the "All Events View" tab. This view provides the same events correlation and navigation functionality using the process GUID
-
-![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/3.png "Sysmon View")
-
-The events can be even arranged (grouped) by machine, event type or GUID
-
-![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/4.png "Sysmon View")
-
-Multiple grouping levels are also supported
-
-![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/5.png "Sysmon View")
-
 
 **Getting Started**
 
@@ -58,6 +29,34 @@ This feature is currently in testing for several reasons:
 *  The previous setup might be different than what is being adopted by others
 *  Importing logs from Elasticsearch might impact the performance of the logs "visualization", this is still being tested
 *  Connectivity to Elasticsearch needs to be "securely" improved(for example add support to SSL, X-Pack, etc...)
+
+**Sysmon Views**
+**Process View** this view simply helps focus on a summary of "run sessions", for example, the analyst can start with executable name (such as cmd.exe) or event type (such as Network event), from there, further filtering can be applied to find running sessions originating for the same binary, but from different locations. This view utilizes the process GUID to filter events per "run" session, selecting any running session (from the list of GUIDs) will display all other (correlated) related events in a simple data-flow view sorted using the time of the event.
+Note: in case data is being imported from an Elasticsearch instance instead of single machine, events can be arranged per executable per machine - check previous section **"Experimental - Sysmon View and Elasticsearch"**).
+
+![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/1_5.png "Sysmon View")
+
+Access to Sysmon event details is provided by simply double-clicking any event in the view, for example, the previous screen capture shows the details of the _Process Creation_ event (event ID 1), the tool also integrates with VirusTotal upon demand for further hash and IP lookup (Needs an API key registration).
+
+**Map View** During the events import process, there is an option to geo-locate IP addresses, if set, Sysmon View will try to geo-map **Network Destinations** using https://freegeoip.net service.
+
+![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2.png "Sysmon View")
+
+In **map view**, it is easy to navigate between correlated (related) events by using a _network event_ as a starting point, again, the tool is able to achive this using the running process session GUID. To explore related events, use the hyperlinks for the session GUID, a new view similar to **process view** will render the related session events:
+
+![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2_5.png "Sysmon View")
+
+**All Events View** can also be used to do a _full search_ through all events data, it also help view events that do not relate to other events, for example, the "Drive Loaded" event type. Navigation between related events is still provided using the process GUID.
+
+![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/3.png "Sysmon View")
+
+The **All Events View** supports pivot-like (grouping) arrangement of events, for example, by machine name, event type or GUID, as shown below
+
+![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/4.png "Sysmon View")
+
+Multiple grouping levels are also possible
+
+![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/5.png "Sysmon View")
 
 # Sysmon Shell
 
