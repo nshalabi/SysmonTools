@@ -22,13 +22,13 @@ The database can be used directly in your own applications too, the database con
 
 **Experimental - Sysmon View and Elasticsearch**
 
-Sysmon View version 1.5 can import Sysmon events from Elasticsearch using Winlogbeat. To get started, configure Winlogbeat to log Sysmon events to an Elasticsearch instance and create an index for "winlogbeats-*", then use the new Elasticsearch import from "File" menu. Good reference to this setup can be found [here](https://cyberwardog.blogspot.ae/2017/02/setting-up-pentesting-i-mean-threat_87.html).
+Sysmon View version 1.5 can import Sysmon events from Elasticsearch. To get started, configure Winlogbeat to log Sysmon events to an Elasticsearch instance and create an index for "winlogbeats-*", then use the new Elasticsearch import command from the "File" menu. Good reference to this setup can be found [here](https://cyberwardog.blogspot.ae/2017/02/setting-up-pentesting-i-mean-threat_87.html).
 
 This feature is currently in testing for several reasons:
 
 *  The previous setup might be different than what is being adopted by others
 *  Importing logs from Elasticsearch might impact the performance of the logs "visualization", this is still being tested
-*  Connectivity to Elasticsearch needs to be "securely" improved(for example add support to SSL, X-Pack, etc...)
+*  Connectivity to Elasticsearch needs to be "securely" improved (for example add support to SSL, X-Pack, etc...)
 
 **Sysmon Views**
 **Process View** this view simply helps focus on a summary of "run sessions", for example, the analyst can start with executable name (such as cmd.exe) or event type (such as Network event), from there, further filtering can be applied to find running sessions originating for the same binary, but from different locations. This view utilizes the process GUID to filter events per "run" session, selecting any running session (from the list of GUIDs) will display all other (correlated) related events in a simple data-flow view sorted using the time of the event.
