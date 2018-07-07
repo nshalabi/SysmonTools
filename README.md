@@ -43,11 +43,11 @@ Access to Sysmon event details is provided by simply double-clicking any event i
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2.png "Sysmon View")
 
-In **map view**, it is easy to navigate between correlated (related) events by using a _network event_ as a starting point, again, the tool is able to achive this using the running process session GUID. To explore related events, use the hyperlinks for the session GUID, a new view similar to **process view** will show up in a new window with all related session events:
+In **map view**, it is easy to navigate between correlated (related) events by using a _network event_ as a starting point, again, the tool is able to achieve this using the running process session GUID. To explore related events, use the hyperlinks for the session GUID, a new view similar to **process view** will show up in a new window with all related session events:
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2_5.png "Sysmon View")
 
-**All Events View** can also be used to do a _full search_ through all Sysmon collected events data, it also help in viewing events that do not relate to other events, such as the "Driver Loaded" event type. Navigation between related events is still provided using the process GUID in addition to event details by clicking on _FID link_
+**All Events View** can also be used to do a _full search_ through all Sysmon collected events data, it also helps in viewing events that do not relate to other events, such as the "Driver Loaded" event type. Navigation between related events is still provided using the process GUID in addition to event details by clicking on _FID link_
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/3.png "Sysmon View")
 
