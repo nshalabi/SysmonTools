@@ -39,7 +39,7 @@ _Note: in case data is being imported from an Elasticsearch instance instead of 
 
 Access to Sysmon event details is provided by simply double-clicking any event in the view, for example, the previous screen capture shows the details of the _Process Creation_ event (event ID 1), the tool also can integrate with VirusTotal upon demand for further hash and IP lookup (Needs an API key registration).
 
-**Map View** : During the events import process, there is an option to geo-locate IP addresses, if set, Sysmon View will try to geo-map **Network Destinations** using https://freegeoip.net service.
+**Map View** : During the events import process, there is an option to geo-locate IP addresses, if set, Sysmon View will try to geo-map **Network Destinations** using https://ipstack.com/ service.
 
 ![Sysmon View](https://nosecurecode.blog/wp-content/uploads/2018/07/2.png "Sysmon View")
 
