@@ -1,4 +1,4 @@
-# ATT&CK™-Tools
+# Sysmon Tools
 ### Utilities for Sysmon
 
 This repository contains the following:
