@@ -30,7 +30,7 @@ Sysmon View helps in tracking and visualizing Sysmon logs by logically grouping 
 
 To get started, export Sysmon events to XML file using the built-in WEVTUtil, this file will be imported later by Sysmon View:
 
-`WEVTUtil query-events “Microsoft-Windows-Sysmon/Operational” /format:xml /e:sysmonview > eventlog.xml`
+`WEVTUtil query-events "Microsoft-Windows-Sysmon/Operational" /format:xml /e:sysmonview > eventlog.xml`
 
 Once exported, run Sysmon View and import the generated file “eventlog.xml” (or the name you selected), please note that this might take some time, depending on the size of the log file (the file needs to be imported once, subsequent runs of Sysmon View do not require importing the data again, just use the file menu `File -> Load existing data` to load previously imported data again).
 
