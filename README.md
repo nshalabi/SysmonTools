@@ -16,9 +16,9 @@ This repository contains the following:
 
 # Release Notes
 
--   There are 32 and 64-bit builds (32.zip and 64.zip)
--   All executables are **digitally signed**
--   Sysmon Tools **ARE FREE**
+-   Sysmon View: Version 3.0 can build a tree view for process creation hierarchy
+-   Sysmon View: Enhanced searching (all events data can be searched)
+-   Sysmon Shell: Added a command to upgrade configuration files to V9.0 (temporary solution)
 
 # Sysmon View
 
@@ -40,17 +40,7 @@ Each time a new XML file is imported, the database file will be deleted and re-c
 
 The database can be used directly in your own applications too, the database contains summaries of hashes, executables, IP addresses, geo mappings and all are logically linked through a file name or a session (executable GUID).
 
-**Hint**: _You can query the database file directly using any SQLite management software without the need for Sysmon View, for example, to generate reports or analyze data_
-
-**Experimental - Sysmon View and Elasticsearch**
-
-Sysmon View version 1.5 can import Sysmon events from Elasticsearch. To get started, configure Winlogbeat to log Sysmon events to an Elasticsearch instance and create an index for "winlogbeats-*", then use the new Elasticsearch import command from the "File" menu. Good reference to this setup can be found [here](https://cyberwardog.blogspot.ae/2017/02/setting-up-pentesting-i-mean-threat_87.html).
-
-This feature is currently in testing for several reasons:
-
-*  The previous setup might be different than what is being adopted by others
-*  Importing logs from Elasticsearch might impact the performance of the logs "visualization", this is still being tested
-*  Connectivity to Elasticsearch needs to be "securely" improved (for example add support to SSL, X-Pack, etc...)
+_You can query the database file directly using any SQLite management software without the need for Sysmon View, for example, to generate reports or analyze data_
 
 **Sysmon Views**
 
