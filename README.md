@@ -102,19 +102,13 @@ Sysmon Shell can also be used to explore the various configuration options avail
 # License
 
 ```
-Copyright 2018 Nader Shalabi. All rights reserved. 
+Copyright 2018 Nader Shallabi. All rights reserved.
 
-Redistribution and use in source and binary forms, with or without modification, are permitted provided
-that the following conditions are met: 
-1. Redistributions of source code must retain the above copyright notice, this list of conditions and
-   the following disclaimer. 
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions
-   and the following disclaimer in the documentation and/or other materials provided with the 
-   distribution. 
+SYSMON TOOLS CAN BE COPIED AND/OR DISTRIBUTED WITHOUT ANY EXPRESS PERMISSION OF NADER SHALLABI.
 
-THIS SOFTWARE IS PROVIDED BY NADER SHALABI ''AS IS'' AND ANY EXPRESS OR IMPLIED
+THIS SOFTWARE IS PROVIDED BY NADER SHALLABI ''AS IS'' AND ANY EXPRESS OR IMPLIED
 WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL NADER SHALABI
+FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL NADER SHALLABI
 OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
 CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
 OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
@@ -123,5 +117,5 @@ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVE
 ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 The views and conclusions contained in the software and documentation are those of the authors and
-should not be interpreted as representing official policies, either expressed or implied, of Nader Shalabi.
+should not be interpreted as representing official policies, either expressed or implied, of Nader Shallabi.
 ```
