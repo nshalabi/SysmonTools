@@ -5,19 +5,21 @@ This repository contains the following:
 
 -   **Sysmon View:** an off-line Sysmon log visualization tool.
 -   **Sysmon Shell:** a Sysmon configuration utility.
+-   **Sysmon Box:** a Sysmon and Network capture logging utility.
 
 # Content
 
 -   Release Notes
 -   Sysmon View
 -   Sysmon Shell
+-   Sysmon Box
 -   Additional Resources
 -   License
 
 # Release Notes
 
--   Sysmon View: Version 3.0 can build a tree view for process creation hierarchy
--   Sysmon View: Enhanced searching (all events data can be searched)
+-   Sysmon View: Version 3.1 can import and correlate network trace capture with Sysmon network event
+-   Sysmon Box: New command line utility to capture Sysmon and network events (v1.0)
 -   Sysmon Shell: Added a command to upgrade configuration files to V9.0 (temporary solution)
 
 # Sysmon View
@@ -93,6 +95,21 @@ Sysmon Shell can also be used to explore the various configuration options avail
 ![Sysmon Shell Templates](https://nosecurecode.com/wp-content/uploads/2017/12/SysmonShellTemplates.png "Sysmon Shell Templates")
 
 **What it won’t do**: warn you about Include/Exclude conflicts or attempt to validate the rules itself, however, once the configuration is applied, the preview pane will display the output captured from Sysmon.exe when configuration is applied (the output of `Sysmon -c command`), from which errors can be identified
+
+# Sysmon Box
+
+Sysmon Box is a small utility that can aid in building a database of captured Sysmon and Network traffic.
+
+![Sysmon Box](https://nosecurecode.com/wp-content/uploads/2019/06/5_6_JUN_2019.png "Sysmon Box")
+
+To run Sysmon Box, use the following command (Sysmon needs to be up and running along with tshark):
+
+`SysmonBox -in Wi-Fi`
+
+* Start capturing traffic (using tshark in the background, this is why you must specify the capture interface)
+*  Run any binaries to generate Sysmon and traffic logs, when done, hit CTRL + C to end the session
+* Sysmon Box will stop traffic capture, dump all captured packets to a file and then export Sysmon logs recorded between the start and end time of the session using EVT utility
+* Build a Sysmon View database (backup existing) file with imported logs from Sysmon and captured traffic, all you have to do is to run Sysmon view from the same folder or put the database file (SysmonViewDB) in the same folder as Sysmon View (keep the packet captures in the same location)
 
 # Additional Resources
 
