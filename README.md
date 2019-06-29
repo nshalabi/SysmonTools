@@ -108,9 +108,8 @@ To run Sysmon Box, use the following command (Sysmon needs to be up and running 
 
 The tool then will carry out the following:
 
-* Start capturing traffic (using tshark in the background, this is why you must specify the capture interface)
-*  Run any binaries to generate Sysmon and traffic logs, when done, hit CTRL + C to end the session
-* Sysmon Box will stop traffic capture, dump all captured packets to a file and then export Sysmon logs recorded between the start and end time of the session using EVT utility
+* Start capturing traffic (using tshark in the background, this is why you must specify the capture interface), when done, hit CTRL + C to end the session
+* Sysmon Box will then stop traffic capture, dump all captured packets to a file and export Sysmon logs recorded between the start and end time of the session using EVT utility
 * Build a Sysmon View database (backup existing) file with imported logs from Sysmon and captured traffic, all you have to do is to run Sysmon view from the same folder or put the database file (SysmonViewDB) in the same folder as Sysmon View (keep the packet captures in the same location)
 
 # Additional Resources
