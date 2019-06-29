@@ -106,6 +106,8 @@ To run Sysmon Box, use the following command (Sysmon needs to be up and running 
 
 `SysmonBox -in Wi-Fi`
 
+The tool then will carry out the following:
+
 * Start capturing traffic (using tshark in the background, this is why you must specify the capture interface)
 *  Run any binaries to generate Sysmon and traffic logs, when done, hit CTRL + C to end the session
 * Sysmon Box will stop traffic capture, dump all captured packets to a file and then export Sysmon logs recorded between the start and end time of the session using EVT utility
