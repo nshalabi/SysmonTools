@@ -26,7 +26,7 @@ This repository contains the following:
 
 Sysmon View helps in tracking and visualizing Sysmon logs by logically grouping and correlating the various Sysmon events together, using existing events data, such as executables names, session GUIDs, event creation time, etc., the tool then re-arranges this data for display into multiple views
 
-![Sysmon View](https://nosecurecode.com/wp-content/uploads/2018/07/1.png "Sysmon View")
+![Sysmon View](https://nosecurecode.files.wordpress.com/2022/02/3fb9d-1.png "Sysmon View")
 
 **Getting Started**
 
