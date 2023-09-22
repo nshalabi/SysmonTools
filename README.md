@@ -49,35 +49,35 @@ _You can query the database file directly using any SQLite management software w
 **Process View** this view simply helps focus on a summary of "run sessions", for example, the analyst can start with executable name (such as cmd.exe) or event type (such as Network event), from there, further filtering can be applied, for example, finding running sessions originating for the same binary, but from different locations. This view utilizes the process GUID to filter events per session "run", selecting any running session (from the list of GUIDs) will show all other related (correlated) events in a simple data-flow-like view, sorted using the time of the event.
 _Note: in case data is being imported from an Elasticsearch instance instead of single machine, events can be arranged per executable per machine - check previous section **"Experimental - Sysmon View and Elasticsearch"**)._
 
-![Sysmon View](https://nosecurecode.com/wp-content/uploads/2018/07/1_5.png "Sysmon View")
+![Sysmon View](https://nosecurecode.files.wordpress.com/2022/02/cb439-1_5.png "Sysmon View")
 
 Access to Sysmon event details is provided by simply double-clicking any event in the view, for example, the previous screen capture shows the details of the _Process Creation_ event (event ID 1), the tool also can integrate with VirusTotal upon demand for further hash and IP lookup (Needs an API key registration).
 
 **Map View** : During the events import process, there is an option to geo-locate IP addresses, if set, Sysmon View will try to geo-map **Network Destinations** using https://ipstack.com/ service.
 
-![Sysmon View](https://nosecurecode.com/wp-content/uploads/2018/07/2.png "Sysmon View")
+![Sysmon View](https://nosecurecode.files.wordpress.com/2022/02/4a3e4-2.png "Sysmon View")
 
 In **map view**, it is easy to navigate between correlated (related) events by using a _network event_ as a starting point, again, the tool is able to achieve this using the running process session GUID. To explore related events, use the hyperlinks for the session GUID, a new view similar to **process view** will show up in a new window with all related session events:
 
-![Sysmon View](https://nosecurecode.com/wp-content/uploads/2018/07/2_5.png "Sysmon View")
+![Sysmon View](https://nosecurecode.files.wordpress.com/2022/02/0dee3-2_5.png "Sysmon View")
 
 **All Events View** can also be used to do a _full search_ through all Sysmon collected events data, it also helps in viewing events that do not relate to other events, such as the "Driver Loaded" event type. Navigation between related events is still provided using the process GUID in addition to event details by clicking on _FID link_
 
-![Sysmon View](https://nosecurecode.com/wp-content/uploads/2018/07/3.png "Sysmon View")
+![Sysmon View](https://nosecurecode.files.wordpress.com/2022/02/7bee8-3.png "Sysmon View")
 
 Additionally, The **All Events View** supports pivot-like (grouping) arrangement of events, by machine name, event type or GUID, as shown below
 
-![Sysmon View](https://nosecurecode.com/wp-content/uploads/2018/07/4.png "Sysmon View")
+![Sysmon View](https://nosecurecode.files.wordpress.com/2022/02/1363d-4.png "Sysmon View")
 
 Multiple grouping levels are also possible
 
-![Sysmon View](https://nosecurecode.com/wp-content/uploads/2018/07/5.png "Sysmon View")
+![Sysmon View](https://nosecurecode.files.wordpress.com/2022/02/4599c-5.png "Sysmon View")
 
 # Sysmon Shell
 
 Sysmon Shell can aid in writing and applying Sysmon XML configurations through a simple GUI interface.
 
-![Sysmon Shell](https://nosecurecode.com/wp-content/uploads/2017/11/HeadImageSysmonShell.png "Sysmon Shell")
+![Sysmon Shell](https://nosecurecode.files.wordpress.com/2022/02/ceb83-headimagesysmonshell.png "Sysmon Shell")
 
 Sysmon Shell can also be used to explore the various configuration options available to Sysmon, easily apply and update XML configuration, in addition to exporting Sysmon events logs, in a nutshell:
 
@@ -92,7 +92,7 @@ Sysmon Shell can also be used to explore the various configuration options avail
 * The utility has descriptions for all events types taken from Sysmon Sysinternals home page (https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
 * Sysmon Shell comes _bundled_ with many Sysmon configuration templates created by other security professionals
 
-![Sysmon Shell Templates](https://nosecurecode.com/wp-content/uploads/2017/12/SysmonShellTemplates.png "Sysmon Shell Templates")
+![Sysmon Shell Templates](https://nosecurecode.files.wordpress.com/2022/02/e2986-sysmonshelltemplates.png "Sysmon Shell Templates")
 
 **What it won’t do**: warn you about Include/Exclude conflicts or attempt to validate the rules itself, however, once the configuration is applied, the preview pane will display the output captured from Sysmon.exe when configuration is applied (the output of `Sysmon -c command`), from which errors can be identified
 
@@ -100,7 +100,7 @@ Sysmon Shell can also be used to explore the various configuration options avail
 
 Sysmon Box is a small utility that can aid in building a database of captured Sysmon and Network traffic.
 
-![Sysmon Box](https://nosecurecode.com/wp-content/uploads/2019/06/5_6_JUN_2019.png "Sysmon Box")
+![Sysmon Box](https://nosecurecode.files.wordpress.com/2022/02/8930e-5_6_jun_2019.png "Sysmon Box")
 
 To run Sysmon Box, use the following command (Sysmon needs to be up and running along with tshark):
 
