@@ -115,7 +115,6 @@ The tool then will carry out the following:
 
 # Additional Resources
 
-* You can read more about Sysmon View & Sysmon Shell on my blog https://nosecurecode.com/
 * The following is a good overview about Sysmon and Sysmon View https://www.fwhibbit.es/sysmon-the-big-brother-of-windows-and-the-super-sysmonview
 
 # License
