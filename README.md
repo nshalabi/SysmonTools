@@ -1,8 +1,8 @@
 # Sysmon Tools 🛡️
 
 [![License](https://img.shields.io/badge/license-BSD-blue.svg)](LICENSE)
-![GitHub last commit](https://img.shields.io/github/last-commit/username/repo)
-![GitHub stars](https://img.shields.io/github/stars/username/repo?style=social)
+![GitHub last commit](https://img.shields.io/github/last-commit/nshalabi/SysmonTools)
+![GitHub stars](https://img.shields.io/github/stars/nshalabi/SysmonTools?style=social)
 
 A collection of utilities for analyzing, visualizing, and managing **Microsoft Sysmon** logs — designed for security analysts, DFIR specialists, and threat hunters.
 
